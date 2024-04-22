@@ -1,0 +1,49 @@
+<html>
+
+
+<head>
+    <title>
+        my website
+    </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+</head>
+
+   <body style="background-color: rgb(255, 255, 255)">
+        <!-- 
+
+            <h1>
+            Top 10 reasons why I hate you
+            </h1>
+        
+        <p>
+            <h2>
+            number 1
+            </h2> 
+        </p>
+
+        <p>
+        everytime you message me, i look like this...   
+        </p>
+
+
+        --> 
+    
+
+        <img id="picture1" src="img/whatimg.png" width="200" height="180"/>
+        <img id="picture2" src="img/kleebimg.png" width="200" height="200"/>
+        <img id="picture3" src="img/kokoimg.png" width="300" height="200"/>
+
+        <script>
+            var sound1 = new buzz.sound("sound/SqueakButton.wav");
+            var sound2 = new buzz.sound("sound/SqueakButton.wav");
+            
+            window.onload = function() {
+                document.getElementById('picture1').addEventListener('mouseover', function () {sound1.play();});
+                document.getElementById('picture2').addEventListener('mouseover', function () {sound2.play();});
+            };
+        </script>
+
+
+    </body>
+
+</html>
